@@ -19,160 +19,192 @@
 <body>
     <header>
         <!-- Navigation -->
-        <a href="./index.html">
-            <img class="nav-logo" src="./images/logo.png" alt="Logo">
-        </a>
-        <nav class>
-            <ul>
-                <li><a class="nav-item" href="#">Services</a></li>
-                <li><a class="nav-item" href="#">Product</a></li>
-                <li><a class="nav-item" href="#">Technology</a></li>
-                <li>
-                    <a class="nav-item" href="#">About</a>
-                    <a href="#">
-                        <img src="./images/arrow-down.png" alt="Arrow">
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-item" href="#">Client</a>
-                    <a href="#">
-                        <img src="./images/arrow-down.png" alt="Arrow">
-                    </a>
-                </li>
-                <li><a class="nav-item" href="#">Partner</a></li>
-            </ul>
-            <ul>
-                <li>
-                    <a class="nav-item" href="#">
-                        <img src="./images/Union.png" alt="House">
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-item" href="#">
-                        <img src="./images/mail.png" alt="Envelope">
-                    </a>
-                </li>
-                <li>
-                    <a class="nav-item" href="#">
-                        <img src="./images/shuffle.png" alt="Arrows">
-                    </a>
-                </li>
-            </ul>
-        </nav>
+        <div class="container">
+            <nav class="nav-container">
+                <a class="logo" href="./index.html">
+                    <img class="nav-logo" src="./images/logo.svg" alt="Logo">
+                </a>
+                <ul class="nav-link">
+                    <li><a class="nav-item" href="#service">Services</a></li>
+                    <li><a class="nav-item" href="#service">Product</a></li>
+                    <li><a class="nav-item" href="#">Technology</a></li>
+                    <li>
+                        <a class="nav-item" href="#about">About</a>
+                        <a href="#">
+                            <img src="./images/arrow-down.svg" alt="Arrow">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#">Client</a>
+                        <a href="#">
+                            <img src="./images/arrow-down.svg" alt="Arrow">
+                        </a>
+                    </li>
+                    <li><a class="nav-item" href="#">Partner</a></li>
+                </ul>
+                <ul class="nav-img">
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="./images/union.svg" alt="House">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="./images/mail.svg" alt="Envelope">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-item" href="#">
+                            <img src="./images/shuffle.svg" alt="Arrows">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
 
         <!-- Hero section -->
-        <section>
-            <div>
-                <h1 class="section-title hero-title">Making the most of the ever-growing <span class="text-accent">Information
-                        Technology</span></h1>
-                <p class="hero-text">Managed by a team of professional experts with extensive experience and impressive
-                    track records</p>
-                <button class="btn hero-btn" type="button">Read More</button>
+        <section class="hero-section">
+            <div class="container">
+                <div class="header-container">
+                    <div class="header-text">
+                        <h1 class="section-title hero-title">Making the most of the ever-growing <span
+                                class="text-accent">Information
+                                Technology</span></h1>
+                        <p class="hero-text">Managed by a team of professional experts with extensive experience and
+                            impressive
+                            track records</p>
+                        <button class="btn hero-btn" type="button">Read More</button>
+                    </div>
+                    <img src="./images/hero-section.svg" alt="Gadgets">
+                </div>
             </div>
-            <img src="./images/hero-section.png" alt="Gadgets" width="563px" height="382px">
         </section>
 
         <!-- About company -->
-        <section>
-            <img src="./images/pana.png" alt="A guy at the computer" width="453" height="472">
-            <div>
-                <h2 class="section-title about-title">Welcome to <span class="text-accent">Dwidasa Samsara Indonesia
-                        (DSI)</span>
-                </h2>
-                <p>
-                    Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by the founders, who each of them
-                    has a
-                    common end objective to innovate new creations by making the most of the ever-growing information
-                    technology throug <span class="text-accent about-accent">DSI</span>’sdistinct front-end based application
-                    concept.
-                </p>
-                <p>
-                    Managed by a team of professional experts with extensive experience and impressive track records,
-                    <span class="text-accent about-accent">DSI</span>
-                    believes that continuous improvements and innovations assure your business to run effectively and
-                    efficiently.
-                </p>
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-container">
+                    <img class="about-img" src="./images/pana.svg" alt="A guy at the computer" width="453" height="472">
+                    <div class="about-text">
+                        <h2 class="section-title about-title">Welcome to <span class="text-accent">Dwidasa Samsara
+                                Indonesia
+                                (DSI)</span>
+                        </h2>
+                        <p class="about-text">
+                            Dwidasa Samsara Indonesia (DSI) was firstly established in 2010 by the founders, who each of
+                            them
+                            has a
+                            common end objective to innovate new creations by making the most of the ever-growing
+                            information
+                            technology throug <span class="text-accent about-accent">DSI</span>’s distinct front-end
+                            based
+                            application
+                            concept.
+                        </p>
+                        <p class="about-text last-margin">
+                            Managed by a team of professional experts with extensive experience and impressive track
+                            records,
+                            <span class="text-accent">DSI</span>
+                            believes that continuous improvements and innovations assure your business to run
+                            effectively and
+                            efficiently.
+                        </p>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Product and Service -->
-        <section>
-            <h2 class="section-title product-title">Product and Service</h2>
-            <ul>
-                <li>
-                    <img src="./images/product-description.png" alt="List of products">
-                    <h3 class="product-sub-title">Our Product</h3>
-                    <p>
-                        Our product is made on the base of our team’s careful research and analyses, ranging from
-                        internet based application.
-                    </p>
-                    <button class="product-btn" type="button">Read More</button>
-                </li>
-                <li>
-                    <img src="./images/verified.png" alt="Verification">
-                    <h3 class="product-sub-title">Our Service</h3>
-                    <p>
-                        DSI’s shared service solutions focus on the front-end based software development, designed
-                        specifically for the banking and financial sectors.
-                    </p>
-                    <button class="product-btn" type="button">Read More</button>
-                </li>
-                <li>
-                    <img src="./images/cogwheel.png" alt="Computer">
-                    <h3 class="product-sub-title">Our Technology</h3>
-                    <p>
-                        First JAVA, runs on more than 850 million personal computers worldwide, and on billions of
-                        devices worldwide, including mobile and TV devices.
-                    </p>
-                    <button class="product-btn" type="button">Read More</button>
-                </li>
-            </ul>
+        <section class="product-section" id="service">
+            <div class="container">
+                <div class="product-container">
+                    <h2 class="section-title product-title">Product and Service</h2>
+                    <ul class="product-list">
+                        <li class="product-item">
+                            <img class="product-img" src="./images/product-description.svg" alt="List of products">
+                            <h3 class="product-sub-title">Our Product</h3>
+                            <p class="product-text">
+                                Our product is made on the base of our team’s careful research and analyses, ranging
+                                from
+                                internet based application.
+                            </p>
+                            <button class="product-btn" type="button">Read More</button>
+                        </li>
+                        <li class="product-item">
+                            <img class="product-img" src="./images/verified.svg" alt="Verification">
+                            <h3 class="product-sub-title">Our Service</h3>
+                            <p class="product-text">
+                                DSI’s shared service solutions focus on the front-end based software development,
+                                designed
+                                specifically for the banking and financial sectors.
+                            </p>
+                            <button class="product-btn" type="button">Read More</button>
+                        </li>
+                        <li class="product-item">
+                            <img class="product-img" src="./images/cogwheel.svg" alt="Computer">
+                            <h3 class="product-sub-title">Our Technology</h3>
+                            <p class="product-text">
+                                First JAVA, runs on more than 850 million personal computers worldwide, and on billions
+                                of
+                                devices worldwide, including mobile and TV devices.
+                            </p>
+                            <button class="product-btn" type="button">Read More</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
 
     <footer>
-        <a class="logo-footer" href="./index.html">
-            <img src="./images/logo.png" alt="Logo">
-        </a>
+        <div class="container">
+            <div class="footer-container">
+                <!-- Address -->
+                <section>
+                    <div class="address-container">
 
-        <!-- Address -->
-        <div>
-            <section>
-                <h2 hidden>Address</h2>
-                <address class="address">
-                    <ul>
-                        <li class="address-title">PT Dwidasa Samsara Indonesia</li>
-                        <li class="address-text">Ruko Jalur Sutera 29A No. 53</li>
-                        <li class="address-text">Alam Sutera Serpong, Tangerang 15323</li>
-                    </ul>
-                </address>
-            </section>
+                        <a class="logo-footer" href="./index.html">
+                            <img src="./images/logo.svg" alt="Logo">
+                        </a>
 
-            <!-- Contacts -->
-            <section>
-                <h2 hidden>Contact</h2>
-                <address>
-                    <ul>
-                        <li>
-                            <a class="contact-item" href="tel:622153141135">Phone: +62.21.5314.1135</a>
-                        </li>
-                        <li>
-                            <a class="contact-item" href="fax:622153141135">Fax: +62.21.5314.1135</a>
-                        </li>
-                        <li>
-                            <a class="contact-item" href="emailto:community@dwidasa.com">Email:
-                                community@dwidasa.com</a>
-                        </li>
-                    </ul>
-                </address>
-            </section>
+                        <h2 hidden>Address</h2>
+                        <address class="address">
+                            <ul class="address-list">
+                                <li class="address-title">PT Dwidasa Samsara Indonesia</li>
+                                <!-- <li><a class="address-link" href="https://maps.app.goo.gl/43juLCxgZvU4a5rS9">Ruko Jalur Sutera 29A No. 53</a></li> -->
+                                <li><a class="address-link" href="https://maps.app.goo.gl/43juLCxgZvU4a5rS9" target="_blank">Ruko Jalur Sutera 29A No. 53 Alam Sutera Serpong, Tangerang 15323</a></li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+
+                <!-- Contacts -->
+                <section>
+                    <div class="contacts-container">
+                        <h2 class="contact-title">Contact</h2>
+                        <address>
+                            <ul class="contact-list">
+                                <li>
+                                    <a class="contact-item" href="tel:622153141135">Phone: +62.21.5314.1135</a>
+                                </li>
+                                <li>
+                                    <a class="contact-item" href="fax:622153141135">Fax: +62.21.5314.1135</a>
+                                </li>
+                                <li>
+                                    <a class="contact-item" href="emailto:community@dwidasa.com">Email:
+                                        community@dwidasa.com</a>
+                                </li>
+                            </ul>
+                        </address>
+                    </div>
+                </section>
+            </div>
         </div>
-
         <p class="footer-text">Copyright &copy; 2015 - <span class="footer-accent">Dwidasa Samsara
                 Indonesia</span></p>
     </footer>
