@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -13,13 +18,15 @@ ul {
 }
 
 p {
-    padding: 0;
-    margin: 0;
+    margin-top: 0;
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
     padding: 0;
     margin: 0;
 }
@@ -43,6 +50,13 @@ address {
     font-style: normal;
 }
 
+.container {
+    width: 100%;
+    max-width: 1173px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
 .section-title {
     color: #1f2e35;
 }
@@ -53,23 +67,67 @@ address {
 
 /* Navigation */
 
+.nav-container {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    gap: 50px;
+}
+
+.nav-img {
+    display: flex;
+    gap: 24px;
+}
+
+.logo {
+    padding-top: 22px;
+}
+
 .nav-item {
     font-weight: 400;
     font-size: 18px;
     color: rgba(31, 46, 53, 0.8);
 }
 
+.nav-item:hover,
+.nav-item:focus {
+    color: #ee4248;
+    ;
+}
+
 /* Hero section */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-text {
+    max-width: 545px;
+}
+
+.hero-section {
+    margin-bottom: 100px;
+    padding-top: 125px;
+}
 
 .hero-title {
     font-weight: 700;
     font-size: 48px;
     line-height: 1.33687;
+    margin-bottom: 24px;
 }
 
 .hero-text {
     font-size: 20px;
     line-height: 1.44687;
+    margin-bottom: 24px;
 }
 
 .hero-btn {
@@ -84,23 +142,68 @@ address {
 
 /* About company */
 
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.about-section {
+    margin-bottom: 100px;
+    background-color: #F6F6F6;
+}
+
+.about-img {
+    margin-bottom: 60px;
+}
+
 .about-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.33687;
+    padding-top: 54px;
+    margin-bottom: 24px;
 }
 
 .about-accent {
     font-weight: 500;
 }
 
+.about-text {
+    margin-bottom: 24px;
+}
+
 /* Product and Servic */
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-list {
+    display: flex;
+    gap: 80px;
+    margin: 0 auto;
+}
+
+.product-item {
+    flex-basis: calc((100% - 32) / 3);
+}
+
+.product-section {
+    margin-bottom: 100px;
+}
+
+.product-img {
+    margin-bottom: 15px;
+}
 
 .product-title {
     font-weight: 500;
     font-size: 32px;
     line-height: 1.33687;
     text-align: center;
+    margin-bottom: 46px;
 }
 
 .product-sub-title {
@@ -108,6 +211,11 @@ address {
     font-size: 28px;
     line-height: 1.33687;
     color: #ee4248;
+    margin-bottom: 15px;
+}
+
+.product-text {
+    margin-bottom: 15px;
 }
 
 .product-btn {
@@ -121,26 +229,60 @@ address {
 
 /* Footer */
 
-.address-title {
-    font-weight: 500;
+.footer-container {
+    display: flex;
+    align-items: center;
+    gap: 48px;
 }
 
-.address-text {
+.address-list {
+    margin-bottom: 18px;
+    max-width: 318px;
+}
+
+.address-title {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.address-link {
     font-weight: 300;
     line-height: 1.49187;
+    color: #263238;
+}
+
+.address-link:hover,
+.address-link:focus {
+    color: #ee4248;
+}
+
+.contact-title {
+    font-weight: 500;
+    font-size: 24px;
+    margin-bottom: 16px;
 }
 
 .contact-item {
     font-weight: 300;
     line-height: 1.49187;
     color: #263238;
+
+}
+
+.contact-item:hover,
+.contact-item:focus {
+    color: #ee4248;
 }
 
 .footer-text {
+    width: 100%;
+    font-weight: 300;
     color: #fff;
     background-color: #ee4248;
+    padding: 22px 0;
+    text-align: center;
 }
 
-.footer-accent{
+.footer-accent {
     font-weight: 500;
 }
